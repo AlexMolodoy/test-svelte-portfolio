@@ -4,14 +4,26 @@
 
 </script>
 
-<Router {routes}/>
-<p>Produced by AlexMolodoy 2024</p>
 
+<div class="container">
+  <Router {routes} />
+  <p>Produced by AlexMolodoy 2024</p>
+</div>
 <style>
-  p{
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .container > :first-child {
+    flex: 1;
+  }
+
+  p {
     color: #333;
-    position: absolute;
-    bottom: 10px;
-    left: calc(50% - 115px);
+    text-align: center;
+    margin: auto 0 0 0;
   }
 </style>
+
