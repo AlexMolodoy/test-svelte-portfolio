@@ -22,22 +22,27 @@
 </script>
 
 <style>
-  .post {
+  .postContainer {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
     font-family: Arial, sans-serif;
   }
+  .postTextContainer{
+    padding: 0 16px;
+  }
 </style>
 
-<div class="post">
+<div class="postContainer">
 
 {#await data}
   <LoadingModule message="Загружаем данные, пожалуйста, подождите..." />
 {:then res} 
   <NavigationModule />
-  <PostModule title={res.title} body={res.body} />
+  <div class="postTextContainer">
+    <PostModule title={res.title} body={res.body} />
+  </div>
 {:catch error}
   {alert(error)}
   <ButtonGoHome/>

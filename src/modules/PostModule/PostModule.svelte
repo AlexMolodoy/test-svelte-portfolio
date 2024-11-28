@@ -6,13 +6,11 @@
   
   <style>
     .post {
-      max-width: 600px;
-      margin: 0 auto;
       padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 24px;
       background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.01);;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
   
     .post h1 {

@@ -5,25 +5,20 @@
   
   <style>
     .postCard {
-      border: 2px solid #ddd;
-      border-radius: 8px;
+      background-color: white;
+      border-radius: 24px;
       padding: 16px;
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.01);;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: left;
     }
 
     .postCard:hover{
-      padding: 14px;
+      padding: 12px;
       border: 4px solid #f9d57f;
-      box-shadow: 0 4px 6px rgba(249, 213, 127, 0.6);
     }
     .postCard:active{
-      padding: 17px;
-    border: 1px solid #f9d57f;
-    box-shadow: 0 4px 6px rgba(249, 213, 127, 0.8);
+      box-shadow: 0 0 6px rgba(249, 213, 127, 0.8);
     }
 
     .postCard h3 {
@@ -36,6 +31,7 @@
       font-size: 1rem;
       margin: 0;
       color: #555;
+      opacity: 0.7;
     }
 
   </style>

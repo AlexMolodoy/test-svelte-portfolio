@@ -8,25 +8,21 @@
 
 <style>
   .userCard {
-    background-color: #fafbfd;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 24px;
     padding: 16px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.01);;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .userCard:hover{
-    padding: 14px;
+    padding: 12px;
     border: 4px solid #f9d57f;
-    box-shadow: 0 4px 6px rgba(249, 213, 127, 0.6);
   }
 
   .userCard:active{
-    padding: 17px;
-    border: 1px solid #f9d57f;
-    box-shadow: 0 4px 6px rgba(249, 213, 127, 0.8);
+    box-shadow: 0 0 6px rgba(249, 213, 127, 0.8);
   }
 
   a{

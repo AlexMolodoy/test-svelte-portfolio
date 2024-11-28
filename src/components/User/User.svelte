@@ -1,28 +1,25 @@
 <script>
-    import UserImage from './assets/user-icon.png';
+    import UserImage from './assets/userIcon.png';
     export let name;
   </script>
   
   <style>
     .userCard {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: start;
       gap: 16px;
-      padding: 8px;
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+      padding: 0 8px;
       max-width: 400px;
       margin: auto;
-      font-family: Arial, sans-serif;
     }
   
     .userCard img {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
+      margin-top: 14px;
+      width: 36px;
+      height: 36px;
       object-fit: cover;
+      position: relative;
     }
   
     .userCard h3 {
@@ -31,13 +28,19 @@
       color: #333;
     }
 
-    .userIcon{
+    .icon{
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
       background-color: #f9d57f;
     }
+
   </style>
   
   <div class="userCard">
-    <img src={UserImage} alt={name} class="userIcon"/>
+    <div  class="icon">
+      <img src={UserImage} alt={name}/>
+    </div>
     <h3>Пользователь {name}</h3>
   </div>
   

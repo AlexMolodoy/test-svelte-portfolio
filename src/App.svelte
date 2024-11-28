@@ -10,5 +10,8 @@
 <style>
   p{
     color: #333;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 115px);
   }
 </style>

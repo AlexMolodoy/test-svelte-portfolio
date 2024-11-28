@@ -9,10 +9,11 @@
       display: inline-block;
       padding: 15px 24px;
       font-size: 1rem;
+      font-weight: bold;
       color: #333333;
       background-color: #f9d57f;
       border: none;
-      border-radius: 8px;
+      border-radius: 24px;
       cursor: pointer;
       text-align: center;
       text-decoration: none;
